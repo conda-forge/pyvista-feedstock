@@ -10,7 +10,7 @@ source:
   sha256: 1647b08530c48d58b39dfcca86c3af913946a3859ffff4c4a1b1a657679ffea4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -25,6 +25,7 @@ requirements:
     - appdirs
     - vtk
     - scooby
+    - meshio
 
 test:
   imports:
