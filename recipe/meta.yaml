@@ -10,7 +10,7 @@ source:
   sha256: e86f9ac580166c66bd88153555382a2b88fd42fbb877ea61744c7cf5140e7f09
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -21,11 +21,11 @@ requirements:
   run:
     - python >=3.5
     - numpy
-    - imageio
+    - imageio >=2.5.0
     - appdirs
     - vtk
     - scooby >=0.5.1
-    - meshio
+    - meshio >=4.0.3, <5.0
 
 test:
   imports:
