@@ -119,5 +119,4 @@ Feedstock Maintainers
 
 * [@akaszynski](https://github.com/akaszynski/)
 * [@banesullivan](https://github.com/banesullivan/)
-* [@hadim](https://github.com/hadim/)
 
