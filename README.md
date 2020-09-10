@@ -5,7 +5,7 @@ Home: https://github.com/pyvista/pyvista
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)
 
