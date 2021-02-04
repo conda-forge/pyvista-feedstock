@@ -5,9 +5,13 @@ Home: https://github.com/pyvista/pyvista
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyvista-feedstock/blob/master/LICENSE.txt)
 
 Summary: 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)
+
+Development: https://github.com/pyvista/pyvista
+
+Documentation: https://docs.pyvista.org/
 
 PyVista: 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK). PyVista is a helper module for the Visualization Toolkit (VTK) that takes a different approach on interfacing with VTK through NumPy and direct array access. This package provides a Pythonic, well-documented interface exposing VTK's powerful visualization backend to facilitate rapid prototyping, analysis, and visual integration of spatially referenced datasets. This module can be used for scientific plotting for presentations and research papers as well as a supporting module for other mesh dependent Python modules.
 
@@ -119,5 +123,4 @@ Feedstock Maintainers
 
 * [@akaszynski](https://github.com/akaszynski/)
 * [@banesullivan](https://github.com/banesullivan/)
-* [@hadim](https://github.com/hadim/)
 

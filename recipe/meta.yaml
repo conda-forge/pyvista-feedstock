@@ -1,5 +1,5 @@
 {% set name = "pyvista" %}
-{% set version = "0.24.0" %}
+{% set version = "0.27.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e86f9ac580166c66bd88153555382a2b88fd42fbb877ea61744c7cf5140e7f09
+  sha256: 04ea1cfc9b51d8820b353e7fc0da935c34a02041a4e2b7309b388c37ad315507
 
 build:
   number: 0
@@ -21,11 +21,11 @@ requirements:
   run:
     - python >=3.5
     - numpy
-    - imageio
+    - imageio >=2.5.0
     - appdirs
     - vtk
     - scooby >=0.5.1
-    - meshio
+    - meshio >=4.0.3, <5.0
 
 test:
   imports:
@@ -46,5 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - banesullivan
-    - hadim
     - akaszynski
