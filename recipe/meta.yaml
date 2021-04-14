@@ -1,5 +1,5 @@
 {% set name = "pyvista" %}
-{% set version = "0.29.0" %}
+{% set version = "0.29.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7fd6c331e4cb6eb922eb2f43f48f3162c70eaca0092f3973c06265489474917d
+  sha256: 8c3ccf0a3d2d316442870e74a4d43b24d51a89bcf1d6c9ee1dc326fee15ea49a
 
 build:
   number: 0
