@@ -10,7 +10,7 @@ source:
   sha256: 665a9da7f37e8c381dec5d753935c90049560f8d45f3156d268db2be775808fd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -26,7 +26,6 @@ requirements:
     - vtk
     - scooby >=0.5.1
     - meshio >=4.0.3, <5.0
-    - transforms3d
 
 test:
   imports:
