@@ -26,7 +26,7 @@ requirements:
     - vtk
     - scooby >=0.5.1
     - meshio >=4.0.3, <5.0
-    - transforms3d
+    - typing_extensions
 
 test:
   imports:
