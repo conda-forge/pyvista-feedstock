@@ -1,35 +1,40 @@
 {% set name = "pyvista" %}
-{% set version = "0.34.1" %}
+{% set version = "0.34.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3fe322d76c5e74797242026d338f948c4cebeee99efcc817fbf97e39a09ccfb0
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyvista-{{ version }}.tar.gz
+  sha256: 410d52a9c4d57c86823e8db0f1b51bd947702c82685da8bfdb78e98f82b3ae24
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.5
     - pip
+    - python >=3.7
   run:
-    - python >=3.5
+    - python >=3.7
     - numpy
     - imageio >=2.5.0
     - appdirs
     - vtk
     - scooby >=0.5.1
     - typing_extensions
+    - pillow
 
 test:
   imports:
     - pyvista
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/pyvista/pyvista
