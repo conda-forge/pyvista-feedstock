@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyvista-{{ version }}.tar.gz
   sha256: 91553804aa162e055e486092bbd4fa60f7e6871096ad4dc47bcc329ad70ce8d6
+  patches:
+    - nopin.patch
 
 build:
   noarch: python
