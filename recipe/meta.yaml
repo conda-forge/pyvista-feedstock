@@ -23,7 +23,7 @@ requirements:
     - numpy
     - imageio >=2.5.0
     - pooch
-    - vtk
+    - vtk-base
     - scooby >=0.5.1
     - typing_extensions
     - pillow
