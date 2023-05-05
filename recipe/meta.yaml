@@ -17,16 +17,15 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - python >=3.7
+    - python >=3.8
+    - matplotlib >=3.0.1
     - numpy
-    - imageio >=2.5.0
-    - pooch
-    - vtk
-    - scooby >=0.5.1
-    - typing_extensions
     - pillow
+    - pooch
+    - scooby >=0.5.1
+    - vtk
 
 test:
   imports:
