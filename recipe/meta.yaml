@@ -1,5 +1,5 @@
 {% set name = "pyvista" %}
-{% set version = "0.38.5" %}
+{% set version = "0.39.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyvista-{{ version }}.tar.gz
-  sha256: aa02266fa8ce10220058d6c05f75f12ec70ad0f6b229c58f9af01ae0fcfeeb3a
+  sha256: 55e1f668100cb803285053d4c4e0091225be2aef4875c614aa142478d20b4f60
 
 build:
   noarch: python
@@ -17,16 +17,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - python >=3.7
+    - python >=3.8
+    - matplotlib-base >=3.0.1
     - numpy
-    - imageio >=2.5.0
+    - pillow
     - pooch
     - vtk-base
     - scooby >=0.5.1
-    - typing_extensions
-    - pillow
+    - vtk
 
 test:
   imports:
