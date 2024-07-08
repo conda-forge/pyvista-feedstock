@@ -25,6 +25,7 @@ requirements:
     - pillow
     - pooch
     - scooby >=0.5.1
+    - typing-extensions
     - vtk
 
 test:
