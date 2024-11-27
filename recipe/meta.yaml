@@ -12,12 +12,13 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - python >=3.8
     - matplotlib-base >=3.0.1
@@ -26,7 +27,7 @@ requirements:
     - pooch
     - scooby >=0.5.1
     - typing-extensions
-    - vtk
+    - vtk <9.4.0
 
 test:
   imports:
