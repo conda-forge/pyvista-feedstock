@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - python >=3.8
     - matplotlib-base >=3.0.1
