@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -27,7 +27,7 @@ requirements:
     - pooch
     - scooby >=0.5.1
     - typing-extensions
-    - vtk <9.4.0
+    - vtk-base !=9.4.0,!=9.4.1,<9.5.0
 
 test:
   imports:
