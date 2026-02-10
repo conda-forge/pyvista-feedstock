@@ -28,6 +28,7 @@ requirements:
     - scooby >=0.5.1
     - typing-extensions
     - vtk-base !=9.4.0,!=9.4.1,<9.6.0
+    - cyclopts >=4.0.0
 
 test:
   imports:
