@@ -10,9 +10,11 @@ source:
   sha256: c639dad1bddff5e366d77371f66f783f6e6a0581446810a66439902222d8db07
 
 build:
+  entry_points:
+    - pyvista = pyvista.__main__:main
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
@@ -35,6 +37,9 @@ test:
     - pyvista
   commands:
     - pip check
+    - pyvista --help
+    - pyvista --version
+    - pyvista report
   requires:
     - pip
     - python {{ python_min }}
