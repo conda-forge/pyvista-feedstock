@@ -27,6 +27,7 @@ requirements:
     - numpy
     - pillow
     - pooch
+    - pyvista-validation ==0.2.2
     - scooby >=0.5.1
     - typing-extensions
     - vtk-base !=9.4.0,!=9.4.1,<9.7.0
