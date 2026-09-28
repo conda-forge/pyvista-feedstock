@@ -14,7 +14,7 @@ build:
     - pyvista = pyvista.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -32,12 +32,17 @@ requirements:
     - typing-extensions
     - vtk-base !=9.4.0,!=9.4.1,<9.8.0
     - cyclopts >=4.0.0
+    - pyobjc-framework-cocoa  # [osx]
+    - __osx  # [osx]
+    - __linux  # [linux]
+    - __win  # [win]
 
 test:
   imports:
     - pyvista
   commands:
     - pip check
+    - python -c "import AppKit"  # [osx]
     - pyvista --help
     - pyvista --version
     - pyvista report
